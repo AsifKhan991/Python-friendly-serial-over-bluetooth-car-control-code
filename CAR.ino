@@ -26,7 +26,7 @@ void drive(int spd){  //function for driving rear motor forward or backward usin
 }
 
 void loop() { 
-  while (Serial.available() > 0) {  // WARNING: data must continously come from the serial, delay in serial data will cause rouge control 
+  while (Serial.available() > 0) {  // WARNING: Serial data flow from pc must be continiuous, no delay is allowed , otherwise the control will be a disaster!
     int inChar = Serial.read();
     val += (char)inChar;
    
