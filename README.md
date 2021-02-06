@@ -1,4 +1,4 @@
-# Serial-over-bluetooh-car-control-a-python-friendly-code
+# Serial-over-bluetooh-car-control-code
 
 Type of car : Servo steered and rear motor driven 
 
