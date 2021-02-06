@@ -1,4 +1,4 @@
-# Serial-over-bluetooh-toy-car-python-friendly-
+# Serial-over-bluetooh-car-control-a-python-friendly-code
 
 Type of car : Servo steered and rear motor driven common cars
 
