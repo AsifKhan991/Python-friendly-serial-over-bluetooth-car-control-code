@@ -18,8 +18,8 @@ if Ardu_stat==1:
         port=0
 
     
-max_angle=60 #40 to 160
-currentspeed=80
+max_angle=60 #40 to 160 degrees 
+currentspeed=80 #base speed
 
     
     
@@ -28,7 +28,7 @@ while True:
     speed=0
     steer_angle=100
     try:
-            if keyboard.is_pressed('up'):
+            if keyboard.is_pressed('up'): # use the arrow keys for controlling
                 speed=currentspeed
             if keyboard.is_pressed('down'):
                 speed=-currentspeed
@@ -47,17 +47,17 @@ while True:
     
     try:
             if keyboard.is_pressed('q'):
-                    break# if key 'q' is pressed 
+                    break# if key 'q' is pressed terminate program 
 
     except:
             pass
           
 
 
-print('Closing..')
+print('Closing program & port....')
     
 if Ardu_stat==1 and port==1:	
-    arduino.write('100,0;\n'.encode())
+    arduino.write('100,0;\n'.encode()) # stopping the car before terminating 
     time.sleep(0.2)
-    arduino.close()
+    arduino.close() #close the serial port
     
