@@ -1,3 +1,4 @@
+//This version is for python control via windows pc
 #include <Servo.h>
 Servo steer; // servo used for steering 
 
