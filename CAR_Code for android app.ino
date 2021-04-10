@@ -1,3 +1,4 @@
+// this version is for the android app called Bluetooth Rc controller
 #include <Servo.h>
 Servo steer; // servo used for steering 
 char t;
